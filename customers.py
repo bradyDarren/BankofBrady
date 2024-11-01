@@ -9,20 +9,12 @@ class Customers:
         self.email = email
         self.us_cit = us_cit
 
-    def name_change(self, change, new_l_name):
-    # made to take into account marital name changes.
-        if change == True:
-            self.l_name = new_l_name
-        
-    def phone_num_change(self): 
-        pass 
-
-    def email_change(self):
-        pass
-
-    def citizenship_change(self):
-        pass
-
+    def change_info(self, current_info, new_info):
+        if hasattr(self, current_info):
+            setattr(self, current_info, new_info)
+        else: 
+            print(f"{current_info} in not a valid selection.")
+            
 class Address: 
     def __init__(self, street_address, city, zip):
     # gathers address info required to open account.
