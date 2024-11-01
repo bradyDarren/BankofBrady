@@ -13,6 +13,15 @@ class Customers:
     # made to take into account marital name changes.
         if change == True:
             self.l_name = new_name
+        
+    def phone_num_change(self): 
+        pass 
+
+    def email_change(self):
+        pass
+
+    def citizenship_change(self):
+        pass
 
 class Address: 
     def __init__(self, street_address, city, zip):
@@ -21,7 +30,7 @@ class Address:
         self.street_address = street_address
         self.city = city
         self.zip = zip
-    
+
     def address_change(self):
         pass 
 
