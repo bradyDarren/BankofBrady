@@ -14,7 +14,7 @@ class Customers:
             setattr(self, current_info, new_info)
         else: 
             print(f"{current_info} in not a valid selection.")
-            
+
 class Address: 
     def __init__(self, street_address, city, zip):
     # gathers address info required to open account.
@@ -23,12 +23,10 @@ class Address:
         self.city = city
         self.zip = zip
 
-    def address_change(self):
-        pass 
 
 class DriversLicense: 
     def __init__(self, dl_num, state, exp_date, iss_date):
-    # gathers info to open account.
+    # gathers info to open account concerning drivers license.
         self.dl_num = dl_num
         self.state = state
         self.exp_date = exp_date
