@@ -1,10 +1,14 @@
 
 class Customers: 
-    def __init__(self, f_name, l_name, ssn):
+    def __init__(self, f_name, l_name, ssn, phone_num, email, us_cit):
     # gathers customer personal info required to open an account.
         self.f_name = f_name
         self.l_name = l_name
         self.ssn = ssn
+        self.phone_num = phone_num
+        self.email = email
+        self.us_cit = us_cit
+
     
     def name_change(self):
     # made to take into account marital name changes.
