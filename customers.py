@@ -9,10 +9,10 @@ class Customers:
         self.email = email
         self.us_cit = us_cit
 
-    
-    def name_change(self):
+    def name_change(self, change, new_name):
     # made to take into account marital name changes.
-        pass
+        if change == True:
+            self.l_name = new_name
 
 class Address: 
     def __init__(self, street_address, city, zip):
