@@ -1,10 +1,12 @@
 
 class Account:
-    def __init__(self, account_num):
-        self.account_num = account_num
+    def __init__(self, acct_num, acct_balance):
+        self.acct_num = acct_num
+        self.acct_balance = acct_balance
 
-class Checkings: 
+class Checkings(Account): 
     def __init__(self, checking_bal):
+        super().__init__
         self.checking_bal = checking_bal
 
     def get_check_bal(self, checking_bal):
